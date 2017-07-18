@@ -3,27 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+	<style> 
+	h1 {
+    background-color: blue;
+	}
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+	body
+		{
+			background-color: #FF5733 ;
+		}
+	</style>
+	<style>
+	table {
+    	font-family: arial, sans-serif;
+    	border-collapse: collapse;
+    	width: 60%;
+	}
+
+	td, th {
+    	border: 4px solid ;
+    	text-align: left;
+    	padding: 8px;
+	}
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: ;
 }
 </style>
 </head>
+<body background="fondo.jpg">
 <body>
-	<button type="button" onclick="convertirCelsius();return false">Convert to Celsius</button>
-	<input name="farenheit" id="farenheit" type="text"/>
+	<center>
+	<h1>Convertidor</h1>
+	<table>
+  	<tr>
+	    <th>Celsius</th>
+	    <th>
+	    	<input name="farenheit" id="farenheit" type="text"/>
+	    </th>
+	</tr>
+  	<tr>
+    	<td><b>Farenheit</b></td>
+    	<td>
+    		<div id="res">
+    		</div>
+    	</td>
+  	</tr>
+  	</table>
+  	<p><button type="button" onclick="convertirCelsius();return false">Convert to Celsius</button></p>
+	</center>
 	<script src="js/temperatura.js" ></script>
-</body>
+	</body>
 </html>
