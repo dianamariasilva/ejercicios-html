@@ -235,7 +235,7 @@ var array =[
   var dato_1 = array[i];
   //alert (dato_1);
   var s = "<div>" + 
-    "<h1>" +  dato_1.name + "</h1>" + "<h2>" + dato_1.email +"</h2>" + "<h2>" + dato_1.street +"</h2>"+
+    "<h1>" +dato_1.id+"."+  dato_1.name + "</h1>" + "<h2>" + dato_1.email +"</h2>" + "<h2>" + dato_1.address.street +"</h2>"+
   "</div>";
   html += s;
  }

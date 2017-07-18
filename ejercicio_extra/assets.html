@@ -3,8 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 </head>
 <body>
-	<script src="array.js" ></script>
+	<button type="button" onclick="convertirCelsius();return false">Convert to Celsius</button>
+	<input name="farenheit" id="farenheit" type="text"/>
+	<script src="js/temperatura.js" ></script>
 </body>
 </html>
